@@ -1,5 +1,9 @@
-const Header = ()=>{
-    return (<div>This is a header</div>);
+const Header = () => {
+  return (
+    <div id="header" data-testid="header">
+      This is a header
+    </div>
+  );
 };
 
 export default Header;
