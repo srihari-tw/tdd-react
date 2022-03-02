@@ -1,10 +1,14 @@
 import Header from "../components/Header";
+import Button from "./Button";
+import Map from "./Map";
 
 const StoreLocator = () => {
   return (
     <div data-testid="storeLocator">
-      Store Locator
       <Header />
+      <Button />
+      <Button />
+      <Map />
     </div>
   );
 };

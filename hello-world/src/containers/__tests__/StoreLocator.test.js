@@ -10,7 +10,19 @@ describe("StoreLocator", () => {
 
   it("renders the header inside store locator", () => {
     render(<StoreLocator />);
-    const header = screen.getByTestId("header");
-    expect(header).toBeInTheDocument();
+    const header = screen.getAllByTestId("header");
+    expect(header.length).toBe(1);
+  });
+
+  it("renders 2 buttons", () => {
+    render(<StoreLocator />);
+    const buttons = screen.getAllByTestId("button");
+    expect(buttons.length).toBe(2);
+  });
+
+  it("renders map", () => {
+    render(<StoreLocator />);
+    const map = screen.getAllByTestId("map");
+    expect(map.length).toBe(1);
   });
 });
