@@ -17,7 +17,7 @@ describe("StoreLocator", () => {
   it("renders 2 buttons", () => {
     render(<StoreLocator />);
     const buttons = screen.getAllByTestId("button");
-    expect(buttons.length).toBe(2);
+    expect(buttons.length).toBe(3);
   });
 
   it("renders map", () => {

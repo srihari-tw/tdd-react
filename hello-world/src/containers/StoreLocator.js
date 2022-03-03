@@ -6,8 +6,9 @@ const StoreLocator = () => {
   return (
     <div data-testid="storeLocator">
       <Header />
-      <Button value="Store" />
-      <Button value="Store" />
+      <Button location="Portland" />
+      <Button location="Oregon" />
+      <Button />
       <Map />
     </div>
   );
