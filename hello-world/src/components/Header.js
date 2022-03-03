@@ -1,7 +1,7 @@
 const Header = () => {
   return (
     <div id="header" data-testid="header">
-      This is a header
+      <img alt="logo" src="images/logo.png"></img>
     </div>
   );
 };

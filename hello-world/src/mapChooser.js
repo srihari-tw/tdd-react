@@ -1,6 +1,6 @@
 function mapChooser(location) {
   location = location || "default";
-  return `${location}.jpg`;
+  return `${location}.png`;
 }
 
 export default mapChooser;

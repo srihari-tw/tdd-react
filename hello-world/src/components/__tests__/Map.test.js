@@ -7,4 +7,10 @@ describe("Map", () => {
     const map = screen.getByTestId("map");
     expect(map).toBeInTheDocument();
   });
+
+  it("render an image inside map", () => {
+    render(<Map />);
+    const image = screen.getByTestId("img");
+    expect(image).toBeInTheDocument();
+  });
 });

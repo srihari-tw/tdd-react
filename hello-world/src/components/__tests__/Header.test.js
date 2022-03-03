@@ -7,4 +7,10 @@ describe("Header", () => {
     const header = screen.getByTestId("header");
     expect(header).toBeInTheDocument();
   });
+
+  it("renders the image as expected", () => {
+    render(<Header />);
+    const image = screen.getByAltText(/logo/i);
+    expect(image).toBeInTheDocument();
+  });
 });
