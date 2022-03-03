@@ -13,4 +13,10 @@ describe("Map", () => {
     const image = screen.getByTestId("img");
     expect(image).toBeInTheDocument();
   });
+
+  it("renders map with location prop", ()=> {
+    render(<Map location={'portland'}/>);
+    const image = screen.getByAltText(/portland/i);
+    expect(image).toBeInTheDocument();
+  });
 });

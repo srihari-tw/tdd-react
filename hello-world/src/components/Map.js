@@ -1,9 +1,14 @@
+import mapChooser from "../mapChooser";
 import "./Map.css";
 
-const Map = () => {
+const Map = (props) => {
   return (
     <div className="map-box" data-testid="map">
-      <img alt="map" src="images/default.png" data-testid="img" />
+      <img
+        alt={props.location}
+        src={`images/${mapChooser(props.location)}`}
+        data-testid="img"
+      />
     </div>
   );
 };

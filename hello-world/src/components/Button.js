@@ -6,7 +6,8 @@ const Button = (props) => {
       className="location-button"
       type="button"
       data-testid="button"
-      value={props.location || 'All Locations'}
+      value={props.location || "Head Office"}
+      onClick={props.onClick}
     ></input>
   );
 };
